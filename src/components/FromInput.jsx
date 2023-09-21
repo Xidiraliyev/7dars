@@ -1,6 +1,6 @@
 
 
-function FromInput({label, type, name, defaultValue}) {
+function FromInput({label, type, name, defaultValue, size}) {
   return (
     <div className="form-control">
         <label className="label">
@@ -9,7 +9,7 @@ function FromInput({label, type, name, defaultValue}) {
         <input type={type}
         name={name}
         defaultValue={defaultValue}
-        className="input input-bordered" />
+        className={`input input-bordered ${size}`} />
     </div>
   )
 }
